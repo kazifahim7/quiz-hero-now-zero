@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Quiz Hero || Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+
+    <!-- You don't need to change noChange.js file. It's fine -->
+    
+    <!-- You don't need to change noChange.js file. It's fine -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        common: ["Rubik", "sans-serif"],
+                    },
+                },
+            },
+        };
+    </script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="h-16 flex items-center shadow-sm">
+        <nav class="flex justify-between items-center w-9/12 mx-auto">
+            <div class="text-zinc-800 font-bold uppercase">
+                <h1 class="text-lg">Quiz <span class="text-green-700">HERO</span></h1>
+                <p class="text-[10px] font-normal capitalize -mt-1">
+                    Get ready to Quiz and be amazed!
+                </p>
+            </div>
+            <a href="/index.html" class="bg-green-600 font-light text-sm px-5 py-1 rounded text-white">
+                Back
+            </a>
+        </nav>
+    </header>
+    <!-- section start -->
+    <section class="max-w-4xl mx-auto p-6 my-10 bg-white rounded-lg shadow-lg">
+        <h2 class="text-3xl font-bold mb-6 text-center text-indigo-600">JavaScript Questions & Answers</h2>
+    
+        <!-- Question 1 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">1. What is a Closure in JavaScript?</h3>
+            <p class="mt-2 text-gray-700">A closure is a function that retains access to its lexical scope, even when the
+                function is executed outside that scope. It allows for data encapsulation and the ability to create private
+                variables.</p>
+        </div>
+    
+        <!-- Question 2 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">2. What is the purpose of the <code>this</code> keyword?</h3>
+            <p class="mt-2 text-gray-700">The <code>this</code> keyword refers to the object it belongs to. It provides a
+                way to access object properties and methods from within the object itself, or in functions to refer to the
+                calling object.</p>
+        </div>
+    
+        <!-- Question 3 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">3. Explain <code>async</code> and <code>await</code> in
+                JavaScript.</h3>
+            <p class="mt-2 text-gray-700">The <code>async</code> keyword is used to define an asynchronous function that
+                returns a promise. The <code>await</code> keyword is used inside an <code>async</code> function to wait for
+                the promise's resolution. It makes asynchronous code look and behave like synchronous code.</p>
+        </div>
+    
+        <!-- Question 4 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">4. What is a Promise?</h3>
+            <p class="mt-2 text-gray-700">A Promise is an object representing the eventual completion or failure of an
+                asynchronous operation. It can be in one of three states: pending, fulfilled, or rejected.</p>
+        </div>
+    
+        <!-- Question 5 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">5. What are JavaScript Data Types?</h3>
+            <p class="mt-2 text-gray-700">JavaScript data types include primitive types like <code>string</code>,
+                <code>number</code>, <code>boolean</code>, <code>null</code>, <code>undefined</code>, <code>symbol</code>,
+                and <code>bigint</code>, as well as complex types like <code>object</code> and <code>function</code>.</p>
+        </div>
+    
+        <!-- Question 6 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">6. What is the difference between <code>==</code> and
+                <code>===</code>?</h3>
+            <p class="mt-2 text-gray-700">The <code>==</code> operator compares two values for equality after converting
+                them to a common type (type coercion). The <code>===</code> operator, also known as the strict equality
+                operator, compares both value and type without performing type coercion.</p>
+        </div>
+    
+        <!-- Question 7 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">7. Explain the event loop in JavaScript.</h3>
+            <p class="mt-2 text-gray-700">The event loop is a mechanism that allows JavaScript to perform non-blocking
+                operations by handling asynchronous callbacks. It continuously checks the call stack and the task queue,
+                executing queued tasks when the stack is empty.</p>
+        </div>
+    
+        <!-- Question 8 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">8. What is the difference between <code>var</code>,
+                <code>let</code>, and <code>const</code>?</h3>
+            <p class="mt-2 text-gray-700"><code>var</code> declares a variable with function scope and allows redeclaration.
+                <code>let</code> declares a block-scoped variable and does not allow redeclaration. <code>const</code>
+                declares a block-scoped constant that cannot be reassigned.</p>
+        </div>
+    
+        <!-- Question 9 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">9. What are Arrow Functions?</h3>
+            <p class="mt-2 text-gray-700">Arrow functions provide a shorter syntax for writing function expressions and do
+                not have their own <code>this</code>, <code>arguments</code>, <code>super</code>, or <code>new.target</code>
+                bindings. They are best suited for non-method functions.</p>
+        </div>
+    
+        <!-- Question 10 -->
+        <div class="mb-4">
+            <h3 class="text-xl font-semibold text-indigo-500">10. What is the purpose of the <code>JSON.stringify()</code>
+                method?</h3>
+            <p class="mt-2 text-gray-700">The <code>JSON.stringify()</code> method converts a JavaScript object or value to
+                a JSON string. It is useful for serializing data to be sent over a network or stored in a text format.</p>
+        </div>
+    </section>
+
+    
+</body>
+</html>
